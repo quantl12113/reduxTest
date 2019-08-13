@@ -8,7 +8,7 @@ class ButtonAction extends React.Component {
       type: 'up',
     })
   }
-  down() {
+  sub() {
     this.props.dispatch({
       type: 'down',
     })
@@ -16,9 +16,8 @@ class ButtonAction extends React.Component {
   render() {
     return(
 			<div>
-        {console.log(this.props)}
 				<Button color="primary" onClick={this.add.bind(this)} >{'+'}</Button>{' '}
-        <Button color="secondary">{'-'}</Button>{' '}
+        <Button color="secondary" onClick={this.sub.bind(this)}>{'-'}</Button>{' '}
 			</div>
 		)
   }

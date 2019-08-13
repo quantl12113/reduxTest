@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { createStore } from 'redux';
-import logo from './logo.svg';
 import './App.css';
 import ListItem from './Components/listItem'
 import ButtonAction from './Components/buttonAction'
@@ -14,13 +13,6 @@ class App extends Component {
     return (
       <Provider store={store} >
         <div className="App">
-          <div className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <h2>Welcome to React</h2>
-          </div>
-          <p className="App-intro">
-            To get started, edit <code>src/App.js</code> and save to reload.
-          </p>
           <ListItem />
           <ButtonAction />
         </div>

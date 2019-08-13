@@ -1,11 +1,14 @@
 import { combineReducers } from "redux";
-const defaultState = { value: 10 }
+const defaultState = { value: 0 }
 
 const todo = (state = defaultState, action) => {
   switch (action.type) {
-    case 'up': return {state: state.value+1};
-    case 'down': return {state: state.value-1};
-    default: return state;
+    case 'up': 
+      return { value: state.value+1};
+    case 'down': 
+      return {value: state.value-1};
+    default: 
+      return state;
   }
 }
 
